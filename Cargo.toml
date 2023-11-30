@@ -1,0 +1,28 @@
+[package]
+name = "aht10-embedded"
+version = "0.0.1"
+edition = "2021"
+
+license = "MIT"
+description = "A platform agnostic driver to interface with the AHT10 temperature/humidity sensor, tested on Rasberry Pi Pico"
+homepage = "https://github.com/jnthbdn/rs-aht10"
+repository = "https://github.com/jnthbdn/rs-aht10"
+readme = "readme.md"
+keywords = ["aht10", "embedded-hal", "humidity", "temperature"]
+categories = ["embedded", "hardware-support", "no-std"]
+
+[dependencies]
+embedded-hal = "0.2.5"
+
+[dev-dependencies]
+rp-pico = { version = "0.8.0", features = ["rp2040-e5"] }
+embedded-alloc = "0.5.0"
+cortex-m = { version = "0.7.6"}
+cortex-m-rt = "0.7.3"
+usb-device = "0.2.9"
+usbd-serial = "0.1.1"
+fugit = "0.3.7"
+
+[[example]]
+name = "rp-pico-aht10"
+path = "example/rp_pico_aht10.rs"
