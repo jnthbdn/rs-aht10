@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "aht10-embedded"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "cortex-m",
  "cortex-m-rt",
