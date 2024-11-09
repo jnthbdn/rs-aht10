@@ -9,7 +9,7 @@ use hal::blocking::{
     i2c::{Read, Write},
 };
 
-mod data;
+pub mod data;
 
 const AHT10_ADDRESS: u8 = 0x38;
 
